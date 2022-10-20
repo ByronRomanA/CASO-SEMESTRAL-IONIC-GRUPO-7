@@ -1,0 +1,145 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button
+        menu="main-menu"
+        color="medium"
+        name="apps"
+      ></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button class="bordered" fill="solid">
+        <ion-icon color="azulduoc" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img
+        src="https://tusegurodeviaje.net/wp-content/uploads/2016/08/Usuario_4.png"
+      />
+    </ion-avatar>
+    <ion-label>
+      <p>Hola</p>
+      <h3>Ten un buen día!!</h3> 
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options]="slidesOptions">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header class="animate__animated animate__flipInX">
+            <div class="main">
+              <img
+                src="https://images.clipartlogo.com/files/images/25/257603/car-pictogram_f"
+              />
+            </div>
+            <img
+              class="files"
+              src="https://img.freepik.com/vector-gratis/ilustracion-concepto-conductor-ciudad_114360-1209.jpg?w=2000"
+            />
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title color="azulduoc" class="ion-margin-bottom"
+              >Conductores disponibles para un nuevo viaje</ion-card-title>
+              <ion-button expand="block">Viajar</ion-button>
+              <ion-progress-bar value="0.9" color="warning"></ion-progress-bar>
+            
+            <ion-progress-bar value="0.5" color="azulduoc"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            
+            <ion-card-title color="azulduoc" class="ion-margin-bottom"
+            >¿Sabes como funciona tellevoApp?</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-button expand="block">Informate aquí</ion-button>
+            <ion-progress-bar value="0.9" color="warning"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="container" >
+    <h2>Secciones</h2>
+
+    <ion-item lines="none" class="animate__animated animate__bounceInLeft">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="reader-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>Historial</h4>
+              <h6>de viajes realizados</h6>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none" class="animate__animated animate__bounceInLeft" >
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="car-sport-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>Ofrecer servicios</h4>
+              <h6>de viaje</h6>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none" class="animate__animated animate__bounceInLeft">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="pricetag-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>Mis descuentos</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </div>
+</ion-content>
